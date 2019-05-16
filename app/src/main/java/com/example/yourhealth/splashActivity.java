@@ -1,5 +1,6 @@
 package com.example.yourhealth;
 
+import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,6 +11,7 @@ public class splashActivity extends AppCompatActivity {
     Handler handler = new Handler();
     int value = 0;
     int add = 1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
