@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "775575147452",
+    "firebase_url": "https://fleet-authority-240602.firebaseio.com",
+    "project_id": "fleet-authority-240602",
+    "storage_bucket": "fleet-authority-240602.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775575147452:android:3d9d99c308e3c05e",
+        "android_client_info": {
+          "package_name": "com.example.yourhealth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "775575147452-9fhar0g7jtgjki56ov30e3vungu10irl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6UYDO7fTPXm2L9LK03DtyLocD3IKdkxU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "775575147452-9fhar0g7jtgjki56ov30e3vungu10irl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
