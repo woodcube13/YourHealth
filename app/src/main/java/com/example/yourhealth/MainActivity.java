@@ -1,6 +1,8 @@
 package com.example.yourhealth;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -34,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         stepview = (TextView) findViewById(R.id.textView);
 
+
         Snackbar.make(findViewById(R.id.main_activity_view), "로그인에 성공했습니다", Snackbar.LENGTH_SHORT).show();
         FitnessOptions fitnessOptions = FitnessOptions.builder()
                 .addDataType(DataType.TYPE_STEP_COUNT_CUMULATIVE)
@@ -49,6 +52,27 @@ public class MainActivity extends AppCompatActivity {
             subscribe();
         }
 
+    }
+
+    @Override
+    public void onBackPressed(){
+        AlertDialog.Builder albuilder = new AlertDialog.Builder(this);
+        albuilder.setMessage("종료하시겠습니까?");
+
+        albuilder.setPositiveButton("예", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                finish();
+            }
+        });
+        albuilder.setNegativeButton("아니오", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                return;
+            }
+        });
+        albuilder.setTitle("프로그램 종료");
+        albuilder.show();
     }
 
     @Override
